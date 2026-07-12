@@ -181,6 +181,16 @@ GEM
     minitest (6.0.6)
       drb (~> 2.0)
       prism (~> 1.5)
+    monetize (2.0.0)
+      money (~> 7.0)
+    money (7.0.2)
+      bigdecimal
+      i18n (~> 1.9)
+    money-rails (3.0.0)
+      activesupport (>= 7.0)
+      monetize (~> 2.0)
+      money (~> 7.0)
+      railties (>= 7.0)
     msgpack (1.8.3)
     net-imap (0.6.4.1)
       date
@@ -345,6 +355,8 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 4.0)
       websocket (~> 1.0)
+    shoulda-matchers (8.0.1)
+      activesupport (>= 7.2)
     solid_cable (4.0.0)
       actioncable (>= 7.2)
       activejob (>= 7.2)
@@ -422,6 +434,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   kamal
+  money-rails
   pg (~> 1.1)
   propshaft
   puma (>= 5.0)
@@ -429,6 +442,7 @@ DEPENDENCIES
   rspec-rails
   rubocop-rails-omakase
   selenium-webdriver
+  shoulda-matchers
   solid_cable
   solid_cache
   solid_queue
@@ -503,6 +517,9 @@ CHECKSUMS
   mini_magick (5.3.1) sha256=29395dfd76badcabb6403ee5aff6f681e867074f8f28ce08d78661e9e4a351c4
   mini_mime (1.1.5) sha256=8681b7e2e4215f2a159f9400b5816d85e9d8c6c6b491e96a12797e798f8bccef
   minitest (6.0.6) sha256=153ea36d1d987a62942382b61075745042a2b3123b1cd48f4c3675af9cc7d6f1
+  monetize (2.0.0) sha256=152980cadff9fd11a95817d56e3d7d69b07998c4506f15d971edf05851f82aba
+  money (7.0.2) sha256=615c27c1fd1d190dceda5c5f4dd5af5f4d20f790ff3b62ea2fe2d96eb22e2c60
+  money-rails (3.0.0) sha256=f4bd1c8e1c98d221e7bf452eeb52e240f41224e43da2a477a5659a87c0c95bae
   msgpack (1.8.3) sha256=8bda4a6428d3244e50d6bd55854d354edbada88a4e1f4f5731a39a0f86bee6a1
   net-imap (0.6.4.1) sha256=29f0360d75a7efd3539f16ac1957dea5c0a51ddeceb348db4553c3120914ea0d
   net-pop (0.1.2) sha256=848b4e982013c15b2f0382792268763b748cce91c9e91e36b0f27ed26420dff3
@@ -566,6 +583,7 @@ CHECKSUMS
   rubyzip (3.4.1) sha256=0a79e745b5c25872ebd148457df5665da8530ed8626c993b01457128f173ca02
   securerandom (0.4.1) sha256=cc5193d414a4341b6e225f0cb4446aceca8e50d5e1888743fac16987638ea0b1
   selenium-webdriver (4.46.0) sha256=cb6cfa6f79eac041749df0b14cdcb0e9fe5df3715a64c77bfaa56b345b99f957
+  shoulda-matchers (8.0.1) sha256=5dbb46e5765b9da225111b085e0819e8c8a121ff94bba430a153eb1ea2c60288
   solid_cable (4.0.0) sha256=8379680ef6bf36e195eb876a6306ea290f87d5fa10bc4a757bc2a918f83229b5
   solid_cache (1.0.10) sha256=bc05a2fb3ac78a6f43cbb5946679cf9db67dd30d22939ededc385cb93e120d41
   solid_queue (1.4.0) sha256=e6a18d196f0b27cb6e3c77c5b31258b05fb634f8ed64fb1866ed164047216c2a
